@@ -37,7 +37,7 @@ class HomeController extends AbstractController
     {
         // Render the 'hello.html.twig' template
         return $this->render('auth/login.html.twig', [
-            'name' => 'Thibaud', // Pass data to the view
+            'name' => 'login', // Pass data to the view
         ]);
     }
 

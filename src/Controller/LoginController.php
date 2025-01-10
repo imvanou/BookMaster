@@ -1,6 +1,5 @@
 <?php
 
-<?php
 
 namespace App\Controller;
 
@@ -28,7 +27,7 @@ class LoginController extends AbstractController
         ]);
     }
 
-    #[Route(path: '/logout', name: 'app_logout')]
+    #[Route(path: 'auth.login', name: 'Accueil')]
     public function logout(): void
     {
        
