@@ -64,8 +64,11 @@ class UserController extends AbstractController
     
             $entityManager->persist($user);
             $entityManager->flush();
+
+            $user_id = $user->getId();
     
             // Message de succès
+            
             $this->addFlash('success', "Votre compte a été créé avec succès !");
             return $this->redirectToRoute('auth.login');
         }
